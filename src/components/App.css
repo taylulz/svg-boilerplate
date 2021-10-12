@@ -32,7 +32,7 @@
 /* Outline */
 @media (prefers-reduced-motion: no-preference) {
   #outline {
-    stroke: rgb(255, 251, 1);
+    stroke: rgb(242, 99, 255);
     stroke-dasharray: 1100;
     stroke-width: 4;
     transform-origin: center;
@@ -52,7 +52,7 @@
 /* Lips */
 @media (prefers-reduced-motion: no-preference) {
   #lips {
-    stroke: rgb(255, 251, 1);
+    stroke: rgb(255, 217, 94);
     stroke-dasharray: 1100;
     stroke-width: 4;
     transform-origin: center;
@@ -110,19 +110,21 @@ to {
 /* Arm */
 @media (prefers-reduced-motion: no-preference) {
   #arm {
-    stroke: rgb(24, 23, 0);
+    stroke: rgb(164, 148, 255);
     /* stroke-dasharray: 1100; */
     stroke-width: 4;
-    transform-origin: right;
-    animation: arm-anime infinite ease-in 5s alternate;
+    transform-origin: center;
+    animation: arm-anime infinite ease-in 3.8s alternate;
   }
 }
 
 @keyframes arm-anime {
-  /* from {
-    transform: rotate(0deg);
-  } */
+  from {
+    transform: rotate(8deg);
+  } 
   to {
     transform: scale(.98);
+    /* transform: rotate(8deg); */
+
   }
 }
