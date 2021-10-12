@@ -5,13 +5,15 @@
 
 /* entire svg */
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     stroke: rgb(242, 99, 255);
     stroke-dasharray: 1100;
     stroke-width: 4;
+    width: 40em;
+    height: 40em;
     transform-origin: center;
-    animation: spin infinite ease 4s alternate;
+    animation: spin infinite ease 5s alternate;
   }
 }
 
@@ -22,25 +24,11 @@
   to {
 
     stroke-dashoffset: 1100;
-    transform: scale(1.01);
+    /* transform: rotateY(10deg); */
   }
-} */
+}
 
 
-
-@media (prefers-reduced-motion: no-preference) {
-.App-logo {
-  width: 5em;
-  height: 5em;
-  font-size: 13vmin;
-  position: relative;
-  
-  animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
-  @keyframes spin {
-    50% { transform: rotate(180deg); }
-    100% { transform: rotate(360deg); }
-  }
-}}
 
 
 
@@ -60,7 +48,7 @@
     transform: rotate(0deg);
   } */
   to {
-    transform: scale(.9);
+    /* transform: scale(.97); */
   }
 }
 
