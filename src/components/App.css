@@ -5,7 +5,7 @@
 
 /* entire svg */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     stroke: rgb(242, 99, 255);
     stroke-dasharray: 1100;
@@ -17,17 +17,32 @@
 
 @keyframes spin {
   from {
-    /* transform: rotate(0deg); */
-    /* stroke: blue; */
+
   }
   to {
-    /* stroke-dashoffset: 50;
-    stroke: yellow; */
-    /* transform: rotate(360deg); */
+
     stroke-dashoffset: 1100;
     transform: scale(1.01);
   }
-}
+} */
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+  width: 5em;
+  height: 5em;
+  font-size: 13vmin;
+  position: relative;
+  
+  animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
+  @keyframes spin {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+}}
+
+
 
 /* Outline */
 @media (prefers-reduced-motion: no-preference) {
