@@ -5,7 +5,7 @@
 
 /* entire svg */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     stroke: rgb(242, 99, 255);
     stroke-dasharray: 1100;
@@ -24,9 +24,8 @@
   to {
 
     stroke-dashoffset: 1100;
-    /* transform: rotateY(10deg); */
   }
-}
+} */
 
 
 
@@ -39,22 +38,23 @@
     stroke-dasharray: 1100;
     stroke-width: 4;
     transform-origin: center;
-    animation: lip-anime infinite ease-in 4s alternate;
+    animation: outline-anime infinite ease 4s alternate;
   }
 }
 
-@keyframes lip-anime {
-  /* from {
-    transform: rotate(0deg);
-  } */
+@keyframes outline-anime {
+  
   to {
-    /* transform: scale(.97); */
+    /* transform-origin: top; */
+    transform: rotate(.5deg);
   }
 }
 
 /* Lips */
 @media (prefers-reduced-motion: no-preference) {
   #lips {
+    width: auto;
+    height: auto;
     stroke: rgb(255, 217, 94);
     stroke-dasharray: 1100;
     stroke-width: 4;
