@@ -5,13 +5,13 @@
 
 /* entire svg */
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     stroke: rgb(242, 99, 255);
     stroke-dasharray: 1100;
     stroke-width: 4;
-    width: 40em;
-    height: 40em;
+    width: 50em;
+    height: 50em;
     transform-origin: center;
     animation: spin infinite ease 5s alternate;
   }
@@ -22,10 +22,9 @@
 
   }
   to {
-
     stroke-dashoffset: 1100;
   }
-} */
+}
 
 
 
@@ -47,6 +46,7 @@
   to {
     /* transform-origin: top; */
     transform: rotate(.5deg);
+    transform: rotate(1deg);
   }
 }
 
@@ -69,6 +69,7 @@
   } */
   to {
     transform: scale(.9);
+    transform: rotate(8deg);
   }
 }
 
@@ -88,6 +89,7 @@
   } */
   to {
     transform: scale(97%);
+    transform: rotate(3deg);
   }
 }
 
@@ -127,7 +129,7 @@ to {
   } 
   to {
     transform: scale(.98);
-    /* transform: rotate(8deg); */
+    transform: rotate(8deg);
 
   }
 }
